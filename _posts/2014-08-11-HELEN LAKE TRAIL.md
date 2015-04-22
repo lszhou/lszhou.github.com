@@ -1,6 +1,7 @@
-**畅游落基山.第一季.HELEN LAKE TRAIL**
-
-----------
+---
+layout: post
+title: 畅游落基山.第一季.HELEN LAKE TRAIL
+---
 Aug.11.2014
 
 这是今年Philipp小组的第一次出游，也算是我人生第一次Hiking，还是挺有纪念意义的。的确，整个过程激动人心，着实令人难以忘怀。
