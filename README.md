@@ -1,22 +1,42 @@
-# iLotus - 又一个简洁的博客主题
+# brume
 
-这个主题是我在 2012 年设计和开发出来的，感觉它的特点，就是写在这里的文字很有底气，耐看。整体风格简洁大方，功能简单。加分点：
+I am not a designer so I cannot impress you with breathtaking Jekyll themes, but brume is something that just came to my mind and I had to build it. It is a clean and simple theme, which has an index page that lists all your blog posts divided by year and an about page. brume uses redcarpet as the Markdown processor with strikethrough extension enabled by default (so you can use ~~ to strike out words).
 
-* 原先我是Wordpress的，所以它的源码是Wordpress主题；现在我又改成Jekyll主题；
-* iconfont，响应式设计，中文字体排版。
+This is how the "Home" page looks like.
 
-注：php 源码可能会有些兼容性问题，可以给我提 issuse。主题的[DEMO](http://template.zhanxin.info/iLotus/index.html)，欢迎使用，但请保留底部版权。
+![Home](https://dl.dropboxusercontent.com/u/9924988/Screen%20Shot%202014-02-26%20at%2018.48.57.png)
 
-## Wordpress 主题使用方法
+And this is a single post.
 
-1. ```git clone``` 源代码（或者直接下载）；
-2. 将```iLotus-wp```目录拷贝到```wp-content/themes```目录；
-3. 登录后台，设置主题为```iLotus```即可。
+![Home](https://dl.dropboxusercontent.com/u/9924988/Screen%20Shot%202014-04-06%20at%2012.56.08.png)
 
-> 如果还有其他插件需求，可以提 issuse.
+## Usage
 
-## Jekyll 主题使用方法
+**Important:** The latest version of brume uses `site.baseurl` for links, therefore, if you want to put your site in a subdirectory, update the *_config.yml* file!
 
-1. ```iLotus-jekyll```目录下运行```jekyll server```即可通过```localhost:4000```访问；
-2. 可通过```_config.yml```文件修改或增加自定义内容；
-3. 这里只给出了2个页面的定义样式（archives和contact）,可以自己根据需求定义。
+- Download the ZIP file and extract it's contents.
+- Open *_config.yml* file and enter your site's URL and add additional configuration or update the existing one if needed.
+- Open *_data/brume.yml* file and fill in values for site name (site title), author (your name) and description (blog description). This file contains all the custom information about your page. You can access it using `site.data.brume` object.
+- Open *about/index.md* file and add information about you or your site. You can delete this file and directory if not needed.
+- Open *_data/links.yml* and add additional links or update the existing ones that you want to be displayed in the navigation menu.
+- If you don't want to use CC BY-NC 4.0 licence for the content, then you should change the footer text, which is located in *_layouts/default.html*.
+- Generate your site and be happy!
+
+### Jekyll < 2.0.0
+
+I try to keep brume up to date with the newest Jekyll version. Jekyll 2.0.0 introduced a lot of changes (like a built in Sass support) that are not backward compatible, therefore I have created a separate branch `legacy` for those, who might be using an older Jekyll version. All the changes that I introduce in `master` will be ported to `legacy`.
+
+## Theme customization
+
+This theme has 4 predefined colors that can be used for links:
+
+- azul
+- ruby
+- amber
+- avocado
+
+![Color Examples](https://dl.dropboxusercontent.com/u/9924988/colors_new.png)
+
+By default it uses *azure*, but if you want to select another one just change the second class of `container` div in *_layouts/default.html* to one of the provided names.
+
+Express your thoughts about brume on Twitter [@aigarsdz](http://twitter.com/aigarsdz), and help me make it better!
