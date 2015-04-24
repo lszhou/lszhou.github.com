@@ -13,7 +13,7 @@ In the recent 5 years, I mostly focus on information technology and software-rel
 
 #### <i class="icon-pencil"></i> Contact Me
 
-I am now living in Calgary with my wife, you could know more about my happy leisure life through our blog ["Love As Travel"](https://ca.linkedin.com/in/longshengzhou)
+I am now living in Calgary with my wife, you could know more about my happy leisure life through our blog ["Love As Travel"](http://loveastravel.github.io/about/)
 
 > **You could also contact me via the following social media:**
 
