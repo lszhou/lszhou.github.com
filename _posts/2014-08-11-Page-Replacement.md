@@ -1,3 +1,8 @@
+---
+layout: post
+title: Analysis and Simply Simulation of Page Replacement Algorithms
+---
+
 FIFO and LRU are two famous and feasible page replacement algorithms. In order to understand the behaviors of the two algorihms, this artical introduce a simply simulator to analysis the above two algorithms.
 
 ##Introduction
