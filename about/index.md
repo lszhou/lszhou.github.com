@@ -7,9 +7,9 @@ Hey! Welcome to my homepage.
 
 #### <i class="icon-pencil"></i> About Me
 
-My name is Longsheng Zhou, a software developer now living in Calgary.  I have a bachelor degree in Applied Mathematics and now pursue a master degree in Computer Science, doing some wonderful reasearch with Dr.Philipp Woelfel in randomized shared memory.
+My name is Longsheng Zhou, a software developer living in Calgary.  I have a bachelor degree in Applied Mathematics and I am pursuing a master degree in Computer Science now, doing some wonderful reasearch with Dr.Philipp Woelfel in randomized shared memory.
 
-Over previous 5 years, I've continued to mostly focus on information technology and software-related application development, with a special interest in distributed computing, multi-threaded  processing and concurrent data structures. I've also enjoyed the challenges and experience in engineering mathematics and numerical techniques.
+In the recent 5 years, I mostly focus on information technology and software-related application development, with a special interest in distributed computing, multi-threaded processing and concurrent data structures. I've also enjoyed the challenges and experience in engineering mathematics and numerical techniques.
 
 #### <i class="icon-pencil"></i> Contact Me
 
