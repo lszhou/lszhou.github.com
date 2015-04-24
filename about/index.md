@@ -9,7 +9,7 @@ My name is Longsheng Zhou, a software developer living in Calgary. I was born in
 
 I spent 4 years in [Nanjing](https://www.google.ca/maps/place/Nanjing,+Jiangsu,+China/@32.5853319,120.1116328,7z/data=!4m2!3m1!1s0x35b58c9b668dcd83:0x8ffbb60b79df1b06), the capital of Jiangsu province and got my bachelor degree in Applied Mathematics in 2012 from [Southeast University](www.seu.edu.cn/). 
 
-After that, I was enrolled in the Ph.D program of the School of Automation (Southeast University), where I accomplished my bachelor thesis/project "Performance Analysis of Differential-algebraic Subsystems" under the supervision of [Dr.Xianzhong Dai](http://dblp.uni-trier.de/pers/hd/d/Dai:Xianzhong). But I dropped out later becasue I had decided to move to Canada. In the rest of time in 2013, I worked as a developer and system analyst for the Key Laboratory of Measurement and Control of Complex Systems of Engineering (Electricity/Energy Syst, Ministry of Education, China) for one year. 
+After that, I was enrolled in the Ph.D program of the School of Automation (Southeast University), where I accomplished my bachelor thesis/project "Performance Analysis of Differential-algebraic Subsystems" under the supervision of [Dr.Xianzhong Dai](http://dblp.uni-trier.de/pers/hd/d/Dai:Xianzhong). But I dropped out later becasue I had decided to move to Canada. In the rest of time in 2013, I worked as a developer and system analyst for the Key Laboratory of Measurement and Control of Complex Systems of Engineering (Electricity/Energy Syst, Ministry of Education, China). 
 
 I am now pursuing a master degree in Computer Science in the University of Calgary, doing some wonderful reasearch with [Dr.Philipp Woelfel](http://pages.cpsc.ucalgary.ca/~woelfel/) in randomized [shared memory](http://en.wikipedia.org/wiki/Shared_memory_(interprocess_communication)).
 
@@ -23,6 +23,6 @@ I am now living in [Calgary](https://www.google.ca/maps/place/Calgary,+AB/@51.01
 
 > - [LinkedIn](https://ca.linkedin.com/in/longshengzhou)
 > - [GitHub](https://github.com/lszhou)
-> - [Flickr](https://www.flickr.com/photos/lszhou)
+> - [Flickr](https://www.flickr.com/photos/lszhou/sets/)
 
 Enjoy ♥
