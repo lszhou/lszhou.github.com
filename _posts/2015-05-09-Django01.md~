@@ -1,22 +1,24 @@
 ---
 layout: post
-title: Web App Framework Introduction
+title: Django Framework Installation
 ---
 
-Web application framework is well applied in today's application development. The definition for web app framework provided by [Wiki](http://en.wikipedia.org/wiki/Web_application_framework) is "A web application framework (WAF) is a software framework that is designed to support the development of dynamic websites, web applications, web services and web resources."
+This blog will cover the following contents:
 
-The so called "full-stack" frameworks are those "who gathered multiple libraries useful for web development into a single cohesive software stack for web developers to use. Examples of this include ASP.NET, JavaEE (Servlets), Ruby on Rails, Grails, Django and so on.
+>- python in Linux
+>- django installation
+>- django sqlite3 DB
+>- github version control 
 
-Here are the different frameworks for various languages:
+##Python##
 
-- PHP: Zend, Symfony, Phpdevshell.
-- Python: Django, web2py, Cherrypy.
-- Java: Struts, Spring, Tapestry, GWT.
-- Ruby: Ruby on Rails.
-- Javasript: JavaScriptMVC.
+If you are using some linux distribution (i.e, Ubuntu, Redhat, etc), then python is already
+pre-installed in the OS. To check whether or not python works well in your OS, you could simply type command 
 
-In the next several blogs, I would like to have some discussion and experiments on the google's app engine (GAE) and Django framework. Specifically, I would like to do the following work:
+$ python
 
-- Brief introduction to GAE and learn how to deploy a simple python-based web application to GAE. 
+if the so-called python interactive interpreter shows up, then your python is working well.
 
-- Use Python Django framework tp build a simple web application. 
+
+##Django##
+
