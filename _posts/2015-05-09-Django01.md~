@@ -8,7 +8,6 @@ This blog will cover the following contents:
 >- python in Linux
 >- django installation
 >- django sqlite3 DB
->- github version control 
 
 Before we set out to use django framework for the web app development, we would like to first set up the development environment, including programming language (python), django framework as well as the database (default sqlite3, mysql, oracle, etc).
 
@@ -80,5 +79,5 @@ Where SQLite3 is the "default" BD. Here "Default" means when you installed your 
 If you have other preference for the BD, please refer to the online materials [here](http://www.djangobook.com/en/2.0/chapter02.html).
 
 
-Now, we are already well prepared to start our first django-powred web app. 
+Now, we are already well prepared to start our first django-powred web app. Good luck!
 
