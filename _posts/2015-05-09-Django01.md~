@@ -10,18 +10,33 @@ This blog will cover the following contents:
 >- django sqlite3 DB
 >- github version control 
 
+Before we set out to use django framework for the web app development, we would like to first set up the development environment, including programming language (python), django framework as well as the database (default sqlite3, mysql, oracle, etc).
+
 #Python#
 
 If you are using some linux distribution (i.e, Ubuntu, Redhat, etc), then python is already
 pre-installed in the OS. To check whether or not python works well in your OS, you could simply type command 
 
+
 ```
 $ python
-
 ```
 
 if the so-called python interactive interpreter shows up, then your python is working well.
 
+To check current python version, use the following command (be careful of the capital, the linux commmands are case sensetive):
+
+```
+$ python -V
+```
+
+or
+
+```
+$ python --version
+```
+
 
 ##Django##
 
+There 
