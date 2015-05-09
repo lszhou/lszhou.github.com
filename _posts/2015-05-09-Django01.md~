@@ -10,12 +10,14 @@ This blog will cover the following contents:
 >- django sqlite3 DB
 >- github version control 
 
-##Python##
+#Python#
 
 If you are using some linux distribution (i.e, Ubuntu, Redhat, etc), then python is already
 pre-installed in the OS. To check whether or not python works well in your OS, you could simply type command 
 
+```
 $ python
+```
 
 if the so-called python interactive interpreter shows up, then your python is working well.
 
