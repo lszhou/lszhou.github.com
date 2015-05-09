@@ -17,6 +17,7 @@ pre-installed in the OS. To check whether or not python works well in your OS, y
 
 ```
 $ python
+
 ```
 
 if the so-called python interactive interpreter shows up, then your python is working well.
