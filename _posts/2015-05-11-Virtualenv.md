@@ -5,7 +5,7 @@ title: Quick Start for virtualenv and virtualenvwrapper
 
 **virtualenv** is defined as a Virtual Python Environment builder. Actually it is a tool used to create isolated python environments. It creates an environment that has its own installation directories, that doesn't share libraries with other virtualenv environments.
 
-**virtualenvwrapper** is a set of extensions to Ian Bicking’s virtualenv tool. The extensions include wrappers for creating and deleting virtual environments and otherwise managing your development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies.
+**virtualenvwrapper** is a set of extensions to **virtualenv**. The extensions include wrappers for creating and deleting virtual environments and otherwise managing your development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies.
 
 To use virtualenvwrapper, *python* and *pip* should definitely be installed in your OS (currently my linux distribution is debian with kernel 3.16).
 
