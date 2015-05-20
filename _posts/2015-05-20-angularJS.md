@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First-round Attack (Node.js)
+title: Into to AngularJS
 ---
 
 ```
@@ -134,6 +134,5 @@ mymodule.config (function($routeProvider){
 -->
 
 </body>
-
 </html>
 ```
