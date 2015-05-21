@@ -3,10 +3,21 @@ layout: post
 title: Second Attack (Node.js/Express)
 ---
 
-> - Express is a minimal yet flexible and powerful web development framework for
-the Node.js (Node) platform...
+Express is a minimal yet flexible and powerful web development framework for
+the Node.js (Node) platform.
 
-## The stuff that makes up Express
+(History) It is written by TJ. Holowaychuk. He built Express on top of Connect -an extensible HTTP server framework, developed by him. Connect provides a set of high performance plug-ins known as middleware. Connect includes over 20 commonly used middleware, including a logger, session support, cookieParser, and more.
+
+(Big picture) Here are some of the tasks Express can do for you:
+
+- Routing based on URL paths
+- Managing sessions via cookies
+- Parsing incoming requests (like form data or JSON)
+- Rejecting malformed requests
+
+Each of the above tasks is handled by a middleware shown in Figure [here](http://www.google.ca/imgres?imgurl=http://media.developeriq.in/images/nodeexpress_2_9_2015_1.png&imgrefurl=http://developeriq.in/articles/2015/feb/09/node-expressjs-and-mongoose-part-ii/&h=221&w=462&tbnid=4rsxq57EBVVJgM:&zoom=1&docid=gyoVH2FgVJ-iyM&ei=RhNeVdS2FNLWoATZyoGgAQ&tbm=isch&ved=0CCUQMygJMAk).
+
+## Section 1: The stuff that makes up Express
 
 **The application object**
 
@@ -81,7 +92,7 @@ of them should be created together, it is a necessity to give all the middleware
 chance to work on the request and the response object, before passing the control
 to the next middleware.
 
-## Concepts in Express
+## Section 2: Concepts in Express
 
 **Asynchronous Javascript and Callback functions (callbacks)**
 
@@ -98,6 +109,9 @@ to the async function to be executed after the async function is done with its j
 
 A Node module is a JavaScript library that can be modularly included in Node
 applications using the *require()* function.
+
+There are lots of third party modules built upon Node.
+Express, Socket.io and Mongoose are the most popular ones.
 
 What the module is capable of is entirely dependent on the module—it can be
 simple helper functions to something more complex such as a web development framework,
@@ -133,7 +147,12 @@ JavaScript objects to the module.exports property of a module.
 
 **Middlewares**
 
-A middleware is a JavaScript function to handle HTTP requests to an Express app. The functionality could be:
+(Definition)Express functionality is provided through middleware, which are nothing but
+asynchronous functions that manipulate the request and response objects.
+
+(Definition, again) A middleware is a JavaScript function to handle HTTP requests to an Express app.
+
+The functionality could be:
 
 - manipulate the request and the response objects
 - or perform an isolated action,
@@ -205,9 +224,90 @@ var forbidder = require('./forbidder.js');
 app.use(forbidder('Wednesday'));
 ```
 
+**Request flow**
 
+There is no independent .js file corresponding to each http request, i.e, to load the home page,
+there would be a file named home.js , for the contact page, contact.js , and so on.
 
+There is a single entry point for all the requests
+coming to the app—via *app.js* —which bootstraps the Express framework.
 
+When an HTTP request arrives at your app, it goes through a stack of middlewares.
+All the middlewares in the chain have the capacity to modify the request and the
+response object in any form and manner.
+
+Among the middlewares, the most important is the **router middleware**, which gives Express
+the capability to define routes and handle them.
+
+The router middleware makes it possible to define flexible URI schema which can be
+handled by their respective handler function.
+
+> The destinations of the HTTP request URIs are defined via routes in the app.
+Routes are how you tell your app "for this URI, execute this piece of JavaScript
+code". The corresponding JavaScript function for a route is called a route handler.
+
+> - Route is defined to be URI schema to access resources
+
+> - Route Handlers are actually some (callback) functions that process the http
+request for their respective routes.
+
+It is the responsibility of the route handler to respond to an HTTP request, or pass
+it on to another handler function if it does not. Route handlers may be defined in
+the app.js file or loaded as a Node module.
+
+Here is a working example of some routes and their handlers defined right in the
+app.js file:
+
+```javascript
+var http = require('http');
+var express = require('express');
+var app = express();
+app.get('/', function(req, res) {
+  res.send('Welcome!');
+});
+app.get('/hello.text', function(req, res) {
+  res.send('Hola!');
+});
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
+http.createServer(app).listen(3000, function() {
+  console.log('Express server listening on port ' + 3000);
+});
+```
+
+Defining the routes and their handlers in the app.js file may work fine if the number
+of routes is relatively few. It becomes messy if the number of routes starts growing.
+That's where defining the routes and their handlers in a Node module comes in
+handy. for example:
+
+```javascript
+/*---------------routes.js--------------*/
+module.exports = function(app) {
+
+  app.get('/', function(req, res) {
+    res.send('Welcome!');
+  });
+
+  app.get('/hello.text', function(req, res) {
+    res.send('Hola!');
+  });
+
+  app.get('/contact', function(req, res) {
+    res.render('contact');
+  });
+};
+
+/*---------------app.js----------------*/
+var http = require('http');
+var express = require('express');
+var app = express();
+var routes = require('./routes')(app);
+
+http.createServer(app).listen(3000, function() {
+  console.log('Express server listening on port ' + 3000);
+});
+```
 
 
 
