@@ -3,7 +3,7 @@ layout: post
 title: Into to AngularJS
 ---
 
-```
+```html
 <!--Keywords:
 - Directives, Filters, and Data Binding;
 - View, Controller and Scope;
