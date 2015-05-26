@@ -96,4 +96,6 @@ when I input `email` and `jone@jone.com` key:value pair, the following error hap
 }
 ```
 
-The reason is what I typed was `email+ space` but not `email`. so the server will regard "email " as a key instead of "email". so make sure typing `email` 5 characters exactly the same as that in the schema.  
+The reason is what I typed was `email + space` but not `email`.
+
+In this case, server will regard "email " as a key instead of "email". so make sure typing `email` 5 characters exactly the same as that in the schema.  
