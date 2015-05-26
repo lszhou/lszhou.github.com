@@ -73,3 +73,27 @@ One more official example, if you have the route `/user/:name`, then the “name
 ```
 
 This eror is not from the prompt but from Postman, the solution is stupid, just because I passed the wrong field name 'firstname' instead of the right one in the schema `userName`. Change it, then it is done.
+
+when I input `email` and `jone@jone.com` key:value pair, the following error happens again:
+
+```JSON
+{
+    "message": "User validation failed",
+    "name": "ValidationError",
+    "errors": {
+        "email": {
+            "properties": {
+                "type": "required",
+                "message": "Path `{PATH}` is required.",
+                "path": "email"
+            },
+            "message": "Path `email` is required.",
+            "name": "ValidatorError",
+            "kind": "required",
+            "path": "email"
+        }
+    }
+}
+```
+
+The reason is what I typed was `email+ space` but not `email`. so the server will regard "email " as a key instead of "email". so make sure typing `email` 5 characters exactly the same as that in the schema.  
