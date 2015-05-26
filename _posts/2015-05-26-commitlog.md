@@ -63,3 +63,13 @@ localhost:8080/users/Tom    // This is right
 Actually, as long as we use `:` to signify an variable, then this variable value could be accessed by `req.params`. `req.params` is an object containing properties mapped to the named route “parameters”.
 
 One more official example, if you have the route `/user/:name`, then the “name” property is available as `req.params.name`. This object defaults to `{}`.
+
+# Problem 3: "User validation failed"
+
+```
+"message": "User validation failed",
+"name": "ValidationError",
+"errors": ......
+```
+
+This eror is not from the prompt but from Postman, the solution is stupid, just because I passed the wrong field name 'firstname' instead of the right one in the schema `userName`. Change it, then it is done.
