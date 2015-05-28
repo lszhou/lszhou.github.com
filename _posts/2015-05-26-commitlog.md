@@ -99,3 +99,71 @@ when I input `email` and `jone@jone.com` key:value pair, the following error hap
 The reason is what I typed was `email + space` but not `email`.
 
 In this case, server will regard "email " (6 chars) as a key instead of "email" (5 chars). so make sure typing `email` 5 characters exactly the same as that in the schema.  
+
+# Porblem: TypeError: Cannot call method 'comparePassword' with null
+
+Let's look at the js code:
+
+```javascript
+...
+auth.post('/login', function(req, res){
+  User.findOne({
+    username: req.body.username
+  }).select('password').exec(function(err, user) {
+      if(err) throw err;
+
+      if(!user) {
+         res.send("User does not exist");
+      }
+
+      if(!user.comparePassword(req.body.password)) {
+        res.status(401).send({success:false, message:"bad password"});
+      }
+
+      // user and password are both valid, then create token
+      var token = createToken(user);
+      res.json({
+        success: true,
+        message: "login successful",
+        token: token,
+      });
+...
+```
+We could not deduce where is the triger for this error directly from the TypeError desciption.
+Notice that, in the above code, we use several `if(...)` statement, however, in mongoose, express, this
+should be handelled very carefully.
+
+To solve this problem, you only need to make the above code more logical, that is adding some `else` statement if they are connect.
+
+```javascript
+// well written code
+auth.post('/login', function(req, res) {
+  User.findOne({
+    username: req.body.username
+  }).select('password').exec(function(err, user) {
+    if (err) throw err;
+
+    if (!user) {
+      res.send("User does not exist");
+    } else {
+      // check password
+      if (!user.comparePassword(req.body.password)) {
+        res.status(401).send({
+          success: false,
+          message: "bad password"
+        });
+      } else {
+        // user and password are both valid, then create token
+        var token = createToken(user);
+        res.json({
+          success: true,
+          message: "login successful",
+          token: token,
+        });
+      }
+    }
+  });
+});
+```
+> Note
+> In express and mongoose, `if(...){}; if(){};` is different from `if(){...}else{...}`
