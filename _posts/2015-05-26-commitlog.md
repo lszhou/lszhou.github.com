@@ -100,7 +100,7 @@ The reason is what I typed was `email + space` but not `email`.
 
 In this case, server will regard "email " (6 chars) as a key instead of "email" (5 chars). so make sure typing `email` 5 characters exactly the same as that in the schema.  
 
-# Porblem: TypeError: Cannot call method 'comparePassword' with null
+# Porblem 4: TypeError: Cannot call method 'comparePassword' with null
 
 Let's look at the js code:
 
