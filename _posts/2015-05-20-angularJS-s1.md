@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Head First in the "A" in "MEAN" full JS stack (2)
+title: Head First in the "A" in "MEAN" full JS stack (1)
 ---
 
 > This blog is only used to takes some notes while reading Pawel Kozlowski's AngularJS book

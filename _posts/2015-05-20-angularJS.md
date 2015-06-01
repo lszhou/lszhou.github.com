@@ -1,7 +1,6 @@
----
+
 layout: post
-title: Head First in the "A" in "MEAN" full JS stack (1)
----
+title: Head First in the "A" in "MEAN" full JS stack (2)
 
 ```html
 <!--Keywords:
