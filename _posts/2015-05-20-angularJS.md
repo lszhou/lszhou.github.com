@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Into to AngularJS
+title: Head First in the "A" in "MEAN" full JS stack 
 ---
 
 ```html
