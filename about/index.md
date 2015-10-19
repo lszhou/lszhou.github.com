@@ -13,8 +13,8 @@ After that, I was enrolled in the Ph.D program of the School of Automation (Sout
 
 I am now pursuing a master degree in Computer Science in the [University of Calgary](http://www.ucalgary.ca/), doing some wonderful reasearch with [Dr.Philipp Woelfel](http://pages.cpsc.ucalgary.ca/~woelfel/) in randomized [shared memory](http://en.wikipedia.org/wiki/Shared_memory_%28interprocess_communication%29).
 
-At the same time, I am working as a Software Engineer in Mentis AI, a start-up company based on artificial intelligence and deep learning techniques.
-I am responsible for the development of a native long-distance oilfield data transmission tool and D3 DST (Drill Stem Test) real-time network data visualization system with robust messaging services and file sharing features and involved in the development of a web app for image classification and object detection, currently focus on the light-weight, reliable distributed communication between server-side processes and ConvNet computation unit.
+At the same time, I am working as a Software Engineer in [Mentis AI](http://mentisai.com/), a start-up company based on artificial intelligence and deep learning techniques.
+I am responsible for the development of a native long-distance oilfield data transmission tool and [D3](http://d3js.org/) DST ([Drill Stem Test](https://en.wikipedia.org/wiki/Drill_stem_test)) real-time network data visualization system with robust messaging services and file sharing features and involved in the development of a web app for image classification and object detection, currently focus on the light-weight, reliable distributed communication between server-side processes and [ConvNet](http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf) computation unit.
 
 Briefly, I mostly focus on (information technology) web apps/web-tech desktop apps development, with a special interest in distributed computing/communication, multithreading, data analysis and visualization and deep learning problems and products. I also enjoy the challenges in numerical computing and pure math.
 
