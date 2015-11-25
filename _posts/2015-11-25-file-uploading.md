@@ -6,9 +6,10 @@ title: File uploads with Express4.x via base64 encoding and decoding (Client-sid
 In this article, We are going to review the file uploading with Express4.x.
 There are actually several ways to upload files with NodeJS or Express, but here
 We will only introduce a simple file uploading solution, i.e, base64 encoding and decoding.
-We will not spend a lot of time on how to encoding a file to data URL but will focus
-on the AngularJS file uploading process, i.e, how AngularJS components work together
-to post the file data (file data URLs) to the backend.
+We will not spend a lot of time on the algorithm of how to encode a file to data URL but will focus
+on the front-end AngularJS file uploading process, i.e, how AngularJS components work together
+to $http.post the file data (file basic information, size, filename, etc and file itself in data URLs forma)
+to the backend.
 
 ---
 Base64 encoding schemes are commonly used when there is a need to encode binary data that needs to
