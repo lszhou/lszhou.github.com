@@ -41,7 +41,17 @@ dWVkIGFuZCBpbmRlZmF0aWdhYmxlIGdlbmVyYXRpb24gb2Yga25vd2xlZGdlLCBleGNlZWRzIHRo
 ZSBzaG9ydCB2ZWhlbWVuY2Ugb2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=
 ```
 
-then we can easy convert `upload a file` to 'upload a string'. In the back end, we decode this
+**Then we actually convert problem *upload a file* to *post a string*. Furthermore, this conversion actually does the following
+task: change multipart bodies submissions to JSON/text bodies submission. Then Node.js body parsing middleware suffices to handle
+file uploading since it does not handle multipart bodies, due to their complex and typically large nature. Otherwise,
+For multipart bodies, you have to use on of the following modules:**
+
+- busboy and connect-busboy
+- multiparty and connect-multiparty
+- formidable
+- multer
+
+In the back end, we decode this
 data URL and translate it back to the original file and save it in the file system of server.
 
 Ok, now let's review some front-end codes which was written following AngularJS MVC Architecture. So in the following sections,
