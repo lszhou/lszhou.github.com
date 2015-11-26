@@ -61,7 +61,7 @@ The above codes help display the items correctly but the following code not,
 ```html
 <div class="modal" id="example">
     <div class="modal-content">
-      \{\{item\}\}
+      {{item}}
     </div>
 </div>
 ```
