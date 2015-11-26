@@ -8,6 +8,7 @@ bug I found from my current project. Fortunately, it was found only in the devel
 not from a released product. In this article, I will talk something about how to use angularjs
 ngRepeat directive to iterate over objects and how to use ng-repeat `$index` variable to handle
 tracking and duplicates.
+
 ---
 
 *The ngRepeat directive instantiates a template once per item from a collection. Each template instance gets its own scope, where the given loop variable is set to the current collection item, and `$index` is set to the item index or key.* This is
