@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File uploads with Express4.x via base64 encoding and decoding (Client-side)
+title: File uploads with Express4.x via base64 encoding and decoding (Server-side)
 ---
 
 Today we will continue the topic about file uploading with Express4.x, but will focus on the backend, i.e,
