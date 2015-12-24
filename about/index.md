@@ -20,7 +20,7 @@ Briefly, I mostly focus on (information technology) web apps/web-tech desktop ap
 
 #### <i class="icon-pencil"></i> Contact Me
 
-I am now living in [Calgary](https://www.google.ca/maps/place/Calgary,+AB/@51.013117,-114.0741556,11z/data=!3m1!4b1!4m2!3m1!1s0x537170039f843fd5:0x266d3bb1b652b63a) with my wife, you could know my leisure life through our blog ["Love As Travel"](http://loveastravel.github.io/about/)
+I am now living in [Calgary](https://www.google.ca/maps/place/Calgary,+AB/@60.3659833,-126.8672452,3z/data=!4m2!3m1!1s0x537170039f843fd5:0x266d3bb1b652b63a) with my wife, you could know my leisure life through our blog ["Love As Travel"](http://loveastravel.github.io/about/)
 
 > **You could also contact me via the following social media:**
 
