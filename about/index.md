@@ -27,6 +27,5 @@ I am now living in [Calgary](https://www.google.ca/maps/place/Calgary,+AB/@60.36
 > - [LinkedIn](https://ca.linkedin.com/in/longshengzhou)
 > - [GitHub](https://github.com/lszhou)
 > - [Flickr](https://www.flickr.com/photos/lszhou/sets/)
-> - [Stack Overflow](http://stackoverflow.com/users/4434648/longsheng-zhou?tab=profile)
 
 Enjoy ♥
