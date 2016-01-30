@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome to My Homepage.
+title: 
 ---
 
 #### <i class="icon-pencil"></i> About Me
