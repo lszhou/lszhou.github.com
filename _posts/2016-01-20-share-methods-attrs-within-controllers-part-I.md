@@ -3,8 +3,6 @@ layout: post
 title: Sharing Code Between AngularJS Controllers, Part I
 ---
 
-
-
 Typically, there are several ways to share methods among controllers.
 The officially recommended way is using services. The main idea and process
 is defining methods in services and the controllers get the

@@ -3,7 +3,6 @@ layout: post
 title: Sharing Code Between AngularJS Controllers, Part II
 ---
 
-
 \# Using *$controller*
 
 *In Angular, a Controller is defined by a JavaScript constructor function that is used to augment the Angular Scope.
@@ -15,3 +14,5 @@ The above child scope is independent with each other, i.e, these scopes are prot
 instant/object is not accessible by another. But as the root for all child scopes, `$rootScope` is accesible from every controllers.
 
 From this we have another idea to *access* another controller's scope.
+
+.....(under writing)
