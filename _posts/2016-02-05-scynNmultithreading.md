@@ -3,8 +3,8 @@ layout: post
 title: Asynchrony and Multithreading
 ---
 
-There are many discussions show up in Stackover Flow about the difference between asynchronous programming and multithreaded programming.
-I picked some nice explainations as follows, thanks a lot in advance first for the relevant users.
+There are already many discussions shown up in Stack Overflow about the difference between asynchronous programming and multithreaded programming.
+I picked some nice explainations as follows, thanks a lot in advance for the relevant users.
 
 by **[Elf Sternberg](http://stackoverflow.com/users/166838/elf-sternberg)**
 > Understanding the difference between asynchronous programming and thread-based programming is critical to your success as a programmer.
@@ -43,27 +43,27 @@ My example sounds quite simple to demonstrate the above two concepts.
 
 Assume you work for a project in big software development team managing codes via GitHub.
 You and other developers could branch from the *master* branch at the same time working on different features.
-These features are totally different and independent with each other maybe. Then you and your developer members act
-as different processes or threads. You work together for different features simultaneously.
+These features are totally different and independent with each other maybe. You work together for different features simultaneously.
 
-Unfortunately, one day your developer friend `James` got sick and he has to stop his work. Then how about you?
+Unfortunately, one day your developer friend `Monkey` (Happy Chinese New Year of Monkey!) got sick and he has to stop his work. Then how about you?
 You will feel sad for him but still keep working on your branch. Right, because your work/feature does not depend on his work.
 
-This is just an real-world example for process crashes. One process crashes will not affect the others.
+This is just an real-world example for process crashes. You and your developer members act
+as different processes or threads. One process crashes will not affect the others.
 
-So you may notice that, when you use your computer, the browser sometimes is dead but you can still move your mouse. Or
+You may notice that, when you use your computer, the browser sometimes is dead but you can still move your mouse. Or
 when you are in a video meeting, you lose the video but the audio is still on, because the browser and mouse, video and audio are
-manipulate by different processes or threads.
+manipulated by different processes or threads.
 
 **\# mutithreaded programming**
 
-Ok, let go back to your development team. Your friend got sick and we still have to work. And assume your work is to *read 100 pages or data*.
-how to program this? Absolutely, you can program one thread to read the page from page 1 to page 100. i.e, the constructions are sequential
-and you read one page after another. But, wait, any other options?
+Ok, let go back to your development team. Your friend got sick and we still have to work. And assume your work is to *Reading 100 New Year Greeting Cards*.
+how to program this? Absolutely, you can program one thread to read the card from card 1 to card 100. i.e, the instructions are sequential
+and you read one card after another. But, wait, do we have any other better and more efficient solution?
 
-You can also use your current thread to create a new thread and then you program two threads to ask one to read page 1 to page 50, and ask another to read from page 51 to page 100. This is just called: mutithreaded programming. You have two threads work for you which improves the efficiency. However, this is still **synchronous programming** for the first thread. Because your constructions are still sequential, the thread execute one after another.
+Sure, you can create new threads in the current process and then you program two multiple threads, say two new thread, and ask thread1 to read card 1 to card 50, and ask thread2 to read from card 51 to card 100. This is just called: mutithreaded programming. You have two threads work for you which improves the efficiency. However, this is still **synchronous programming**. Because your instructions are still sequential.
 
-Specifically, suppose you have a function `create()` which helps create a new thread, and your program looks like this:
+More specifically, suppose you have a function `create()` which helps create a new thread, and your program looks like this:
 
 ```javascript
 // create new threads
@@ -93,8 +93,8 @@ multithreadedly, but using synchronous programming. The following function call 
 
 **\# Asynchrony**
 
-Let go back to your team and try to understand **asynchrony**. Suppose your team lead ask you to take James's work as wel. So now you have to
-work simultaneously for two features. What you will do? Generally, we will switch between the two features. Or for example, if you got a problem in your feature and do not know how to solve the problem in a short time, then you will switch to work on James's feature in order to save time. Then when you
+Let go back to your team and try to understand **asynchrony**. Suppose your team lead ask you to take Monkey's work as wel. So now you have to
+work simultaneously for two features. What you will do? Generally, we will switch between the two features. Or for example, if you got a problem in your feature and do not know how to solve the problem in a short time, then you will switch to work on Monkey's feature in order to save time. Then when you
 come with some idea to solve your problem, you will switch back to you feature, right?
 
 This is called **Asynchrony**. My execution does not depends on your execution. So another example:
