@@ -69,3 +69,74 @@ dataFactory.delete = function(label) {
 ```
 
 then in the backend, '2016Salary' could be accessed by `req.param.label`.
+
+\# `$http` returns a `promise`
+
+Demo first:
+
+```javascript
+
+// angularjs factory
+dataFactory.all = function() {
+  return 'hey';
+}
+
+// angularjs controller
+console.log(Data.all());
+
+```
+
+Guess what we get printed in the console? 'hey'? Yes. This is normal method call as we do anywhere. let's continue!
+
+```javascript
+
+// server api
+api.get('/api/hey', function(req, res){
+  res.send{
+    success: true,
+    message: 'hey'
+  }
+})
+
+// factory
+dataFactory.all = function() {
+  return $http.get('/api/hey');
+};
+
+// angularjs controller
+console.log(Data.all());
+
+```
+Guess what we get printed in the console? `hey`? Nop. `{success: true, message: 'hey'}`, Nop....Why?
+
+Actually we get a much more complicate object has these properties:
+
+```
+data – {string|Object} – The response body transformed with the transform functions.
+status – {number} – HTTP status code of the response.
+headers – {function([headerName])} – Header getter function.
+config – {Object} – The configuration object that was used to generate the request.
+statusText – {string} – HTTP status text of the response.
+
+```
+
+This object is called a `promise`. Wait, speak hunman language!
+
+Ok, The CommonJS Promise proposal describes a promise as an **interface** for interacting with an object
+that represents the result of an action that is performed **asynchronously**, and may or may not be finished at any given point in time.
+
+Angularjs promise service worths a long independent article to explain. But now let's just remember `$http` returns a promise which wraps our actual return
+data `{success: true, message: 'hey'}` in its `data` properties. And more important, this promise has a `.then()` method which could help us
+unwrap the promise object and get our data.
+
+So after we call `Data.all()`, just using the following chaining pattern to get the data:
+
+```javascript
+
+Data
+  .all()
+  .then(function(response){
+    console.log(response.data.message); // this will print 'hey'
+  })
+
+```
