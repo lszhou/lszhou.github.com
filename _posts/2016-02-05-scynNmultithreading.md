@@ -97,7 +97,9 @@ Let go back to your team and try to understand **asynchrony**. Suppose your team
 work simultaneously for two features. What you will do? Generally, we will switch between the two features. Or for example, if you got a problem in your feature and do not know how to solve the problem in a short time, then you will switch to work on Monkey's feature in order to save time. Then when you
 come with some idea to solve your problem, you will switch back to you feature, right?
 
-This is called **Asynchrony**. My execution does not depends on your execution. So another example:
+This is called **Asynchrony**. My execution does not depends on your execution.
+
+**\# One More Example**
 
 ```javascript
 
@@ -107,4 +109,8 @@ var thread2 = create(// cost 1 second);
 ```
 
 In the above example, if the creation of thread1 will cost 1 hour, then I definitely want to witch to create thread2 first. Then when I/O is ready,
-I will have the thread1 created. the stupid scenario, waiting for 1h until I/O or internet is ready, then create thread1 and then thread2 sequentially, should be definitely avoided. This is especially important in web application development.
+I will have the thread1 created.
+
+The stupid scenario-waiting for 1h until I/O or internet is ready, then create thread1 and then thread2 sequentially, should definitely be avoided.
+
+This is especially important in web application development.
