@@ -120,10 +120,13 @@ statusText – {string} – HTTP status text of the response.
 
 ```
 
-This object is called a `promise`. Wait, speak hunman language!
+This object is called a `promise`. Wait, speak human language!
 
-Ok, The CommonJS Promise proposal describes a promise as an **interface** for interacting with an object
-that represents the result of an action that is performed **asynchronously**, and may or may not be finished at any given point in time.
+Ok, The CommonJS Promise proposal describes a promise as
+
+> an **interface** for interacting with an object
+that represents the result of an action that is performed
+**asynchronously**, and may or may not be finished at any given point in time.
 
 Angularjs promise service worths a long independent article to explain. But now let's just remember `$http` returns a promise which wraps our actual return
 data `{success: true, message: 'hey'}` in its `data` properties. And more important, this promise has a `.then()` method which could help us
