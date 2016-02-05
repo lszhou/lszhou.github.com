@@ -3,7 +3,9 @@ layout: post
 title: Misuse $http service
 ---
 
-*The $http service is a core Angular service that facilitates communication with the remote HTTP servers via the browser's XMLHttpRequest object or via JSONP.*
+*The $http service is a core Angular service that facilitates communication with the remote HTTP servers via the browser's XMLHttpRequest object or via JSONP.* -- AngularJS doc
+
+---
 
 \# `req.body`
 
