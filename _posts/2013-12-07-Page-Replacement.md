@@ -15,7 +15,7 @@ When a program is executed, it becomes a process and thus has its own address sp
 
 To solve this problem, the first thing we need to know is that if the PAS is broken up int chunks (virtual pages), not all the pages have to be in the physical memory to run the program. CPU only needs to tell MMU: "I want the data at the virtual address ..... (say 3333)", than the MMU checks whether the virtual page corresponding to 3333 has been mapped to memory (physical frame). If the answer is yes, than MMU just needs to give the data in the phsical frame to CPU; if no, than MMU first need to finish mapping task then do the above thing.
 
-Technically, when the answer is no, MMU will cause CPU to trap in the OS, such trap is so called Page Fault. OS will next execute a trap instruction: telling free frame, evicting a occupied frame, than changing the mapping. Namely, if there is a free frame, then the OS selects it, fetches the data from disk, writes the page into the destination frame and updating the index as needed. However, if all the frames are occupied, then the OS beats its brain out to try to evict one of them. Such problem is so called page replacement problem. 
+Technically, when the answer is no, MMU will cause CPU to trap in the OS, such trap is so called Page Fault. OS will next execute a trap instruction: telling free frame, evicting a occupied frame, than changing the mapping. Namely, if there is a free frame, then the OS selects it, fetches the data from disk, writes the page into the destination frame and updating the index as needed. However, if all the frames are occupied, then the OS beats its brain out to try to evict one of them. Such problem is so called page replacement problem.
 
 ##Analysis and Simply Simulation of Page Replacement Algorithms
 
@@ -42,9 +42,9 @@ We use the the getopt_long(3) to parse the command line and apply atoi() and str
 
 Thus, the main function looks like this:
 
-```C
+```C++
 /*Function Declarations*/
-void FIFO(int pc[],int bc[],int pageCount,int frameCount) 
+void FIFO(int pc[],int bc[],int pageCount,int frameCount)
 void FIFO2(int pc[],int bc[],int pageCount,int frameCount)   
 void LRU(int pc[],int bc[],int pageCount,int frameCount)   
 void LRU2(int pc[],int bc[],int pageCount,int frameCount)  
@@ -61,6 +61,7 @@ int main(int argc, char *argv[])
   int frameCount;/*the number of available "physical page frames"*/
   int pageCount=100000;
   int bc[pageCount];
+
   char *alg;
   char *key;
 
@@ -71,7 +72,7 @@ int main(int argc, char *argv[])
     {"alg",   required_argument, 0,  'a' },
     {"state", required_argument, 0,  's' }
   };
-  
+
   int long_index =0;
   opt = getopt_long(argc,argv,"v:p:a:s:", long_options, &long_index);
   while(opt != -1)
@@ -89,10 +90,10 @@ int main(int argc, char *argv[])
   case 'a':
    alg=strdup(optarg);
    break;
-   
+
  case 's':
    key=strdup(optarg);
-   break; 
+   break;
  }
       opt = getopt_long(argc,argv,"v:p:a:s:", long_options, &long_index);  
     }
@@ -134,7 +135,7 @@ The following step is to write the FIFO and LRU. The two implementation are easy
 
 Simulating 50 runs of each of the two algorithms FIFO and LRU, the mean,  median and std. dev. of the number of page faults are reported as follows:
 
-``` 
+```
                 FIFO(COLD)                LRU(COLD)  
 
 mean            90001                      89984      
@@ -143,7 +144,7 @@ media           90027                      89966
 
 std.dev         78.16                      52.45
 
-``` 
+```
 From the above statics, LRU produces fewer page faults. But the data of  FIFO is pretty close to LRU. The page fault rate are both about 90%.
 
 ##Conclusion
@@ -164,14 +165,3 @@ http://blog.csdn.net/crayondeng/article/details/9017823
 - Wikipedia Website, http://en.wikipedia.org/wiki/Page_replacement_algorithm
 - Modern Operating Systems, Third Edition by Andrew S. Tanenbaum, published by Pearson/Prentice Hall (a textbook-like -tome on operating systems concepts)
 - Linux Kernel Development, 3rd Edition by Robert Love
-
-
-
-
-
-
-
-
-
-
-
