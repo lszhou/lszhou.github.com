@@ -96,16 +96,15 @@ Then the external `$http` wrap the internal
 promise `p1` to be a new promise, say `p2` whose `data` property holds promise `p1`. In another word, the `all()` method returns a nested
 promise.
 
-But this function as well as `all()` method does not any additional operations of this string. So the final solution is also
-very straightforward, i.e, all functions return the result of its inner call back functions.
-
 Solution is this:
 
 ```javascript
 
 dataFactory.all = function() {
-  return $http.get('/api/hey').then(function(response) {
-    return $http.get('/api/hi');
+  return $http.get('/api/hey').then(function(internalData) {
+    return $http.get('/api/hi').then(function(externalData) {
+      return 'test';
+    });
   });
 }
 
