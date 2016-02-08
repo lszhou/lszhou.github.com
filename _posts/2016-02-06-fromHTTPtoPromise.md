@@ -14,6 +14,8 @@ As [HankScorpio](http://stackoverflow.com/users/4518468/hankscorpio) pointed, th
 
 Actually, during the development, we do need some guarantee of the synchrony. In this series, we are going to see how to implement such "synchrony" and see why it is necessary.
 
+---
+
 Let's start from a Stack Overflow Q&A.
 
 **\# Base Question**
