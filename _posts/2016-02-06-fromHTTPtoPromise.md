@@ -61,12 +61,21 @@ dataFactory.all = function() {
 
 then the 'test2' can not be printed via the controller. Why?
 
-Recall what we discussed in the previous [notes](http://lszhou.github.io/misuseHttp), then we know the answer is,
-we put the `return` statement in the callback function and the `all()` function has no return statement,
+We put the `return` statement in the callback function and the `all()` function has no return statement,
 and by default all functions will return `undefined`. Thanks@[HankScorpio](http://stackoverflow.com/users/4518468/hankscorpio).
 
-More specifically, let's review the above codes carefully. in dataFactory `all()` method, there are two `$http` calls.
+More specifically, as we know $http returns a promise. In dataFactory `all()` method, there are two `$http` calls.
 This means both of them will return a promise.
+
+The inside $http method call is
+
+```javascript
+$http
+  .get('/api/hi')
+```
+
+which will return a promise which wraps the data fetched from url `'/api/hi'`. As we also know, AngularJS promise has a `then()` method and
+the prototype looks like this `then(successCallback, errorCallback, notifyCallback)`. Note that The `successCallback, errorCallback, notifyCallback` can all be ignored, or passed `null` if you have no action to be performed. So here we have
 
 ```javascript
 $http
@@ -76,27 +85,60 @@ $http
     return 'test2'; // 'test2' can not be printed, and console show 'undefined'
   });
 ```
+In the `then` method, we did nothing for the data fetching from `'/api/hi'` but just return a string `test2`. So the result for the whole block execution
+is `test2`.
 
+Now the above codes could be simplified as
 
 ```javascript
+dataFactory.all = function() {
 
   $http
     .get('/api/hey')
     .then(function(externalData) {
-      // ... promise p1
+
+      var str = 'test2';
     });
+};
 
 ```
-Now let's analyze the two promises carefully and see what do that look like.
 
-The internal `$http` returns a promise object, say `p1` which contains an property called `data` and the value of this property is exactly string `test2`.
-From the external `$http` perspective, it receives promise `p1` from the internal `$http`.
+So if want this block return this string as well we have to return the string using `return` statement like this:
 
-Then the external `$http` wrap the internal
-promise `p1` to be a new promise, say `p2` whose `data` property holds promise `p1`. In another word, the `all()` method returns a nested
-promise.
+```javascript
+dataFactory.all = function() {
 
-Solution is this:
+  $http
+    .get('/api/hey')
+    .then(function(externalData) {
+
+       return 'test2'; // namely, return str = 'test2'; or return 'test2';
+    });
+};
+
+```
+
+Then `all()` method could be further simplified as:
+
+```javascript
+dataFactory.all = function() {
+
+  var str0 = 'test2';
+};
+```
+
+What to do next? Right, return again:
+
+```javascript
+dataFactory.all = function() {
+
+  var str0 = 'test2';
+
+  return str0; // or just return 'test2';
+};
+```
+
+So finally we get the solution which is quite straightforward, just adding the missed `return` statement.
 
 ```javascript
 
