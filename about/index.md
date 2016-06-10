@@ -13,7 +13,7 @@ After that, I was enrolled in the Ph.D program of the School of Automation (Sout
 
 I am now pursuing a master degree in Computer Science in the [University of Calgary](http://www.ucalgary.ca/), doing some wonderful reasearch with [Dr.Philipp Woelfel](http://pages.cpsc.ucalgary.ca/~woelfel/) in randomized [shared memory](http://en.wikipedia.org/wiki/Shared_memory_%28interprocess_communication%29).
 
-At the same time, I am working as a Backend Software Developer in quirklogic, Inc and invloved in the developement of cloud service for a fantastic cutting edge device.
+At the same time, I am working as a Backend Software Developer in [Quirklogic, Inc](http://www.quirklogic.com/) and invloved in the developement of cloud service for a fantastic cutting edge device.
 
 Briefly, I mostly focus on web apps/web-tech desktop apps and Node.js cloud service development, with a special interest in RESTful API, distributed computing/communication, multithreading, data analysis and visualization. I also enjoy the challenges in numerical computing and pure math.
 
