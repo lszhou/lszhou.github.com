@@ -15,7 +15,7 @@ I am now pursuing a master degree in Computer Science in the [University of Calg
 
 At the same time, I am working as a Backend Software Developer in [Quirklogic, Inc](http://www.quirklogic.com/) and invloved in the developement of cloud service for a fantastic cutting edge device.
 
-Briefly, I mostly focus on web apps/web-tech desktop apps and Node.js cloud service development, with a special interest in RESTful API, distributed computing/communication, multithreading, data analysis and visualization. I also enjoy the challenges in numerical computing and pure math.
+Briefly, I mostly focus on web application and Node.js cloud service development, with a special interest in RESTful API, distributed computing/communication, asynchrony, data analysis and visualization. I also enjoy the challenges in numerical computing and pure math.
 
 #### <i class="icon-pencil"></i> Contact Me
 
