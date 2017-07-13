@@ -1,5 +1,8 @@
 - url: http://lszhou.github.io/
-  title: Home
+  title: Blog
 
 - url: http://lszhou.github.io/about/
   title: About
+
+- url: http://lszhou.github.io/resume/
+  title: Resume
