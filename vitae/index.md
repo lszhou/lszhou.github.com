@@ -3,13 +3,14 @@ layout: page
 title:
 ---
 
-#### RESEARCH INTEREST
+### RESEARCH INTEREST
+---
 
 Web and Cloud services; Distributed Computation and System; Concurrency Data Structure; Visual Data Analytics; High-performance and Large-scale Application Architecture.
 
-#### EMPLOYMENT EXPERIENCE
+### EMPLOYMENT EXPERIENCE
 
-**Software Developer** ( April 2016 – Present )
+####**Software Developer** ( April 2016 – Present )
 
 QuirkLogic Inc. Calgary
 
