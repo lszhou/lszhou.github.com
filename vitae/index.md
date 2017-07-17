@@ -8,9 +8,11 @@ title:
 
 </center>
 
+# <center>LONGSHENG ZHOU</center>
+---
+
 RESEARCH INTEREST
-------
-<hr/>
+===
 
 Web and Cloud services; Distributed Computation and System; Concurrency Data Structure; Visual Data Analytics; High-performance and Large-scale Application Architecture.
 
