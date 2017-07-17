@@ -11,22 +11,24 @@ Web and Cloud services; Distributed Computation and System; Concurrency Data Str
 EMPLOYMENT EXPERIENCE
 ------
 
-> **Software Developer** (April 2016 – Present) \- [QuirkLogic Inc](https://www.quirklogic.com/)
+**Software Developer** (April 2016 – Present) \- [QuirkLogic Inc](https://www.quirklogic.com/)
 
-Involving in Quirklogic agile R&D engineering team building cloud and web services for real-time ideation e-ink solution "[Quilla](https://www.youtube.com/watch?v=o4V4AA99jjU&t=3s)" and its ecosystem.
+<span style="background-color:green">
+> Involving in Quirklogic agile R&D engineering team building cloud and web services for real-time ideation e-ink solution "[Quilla](https://www.youtube.com/watch?v=o4V4AA99jjU&t=3s)" and its ecosystem.
 
-Rotating scrum master leading sprint planning, refinement, development, daily SCRUMs, retrospectives, backlog grooming. Act as a bridge between cloud team and other teams for cross-team collaboration.
+> Rotating scrum master leading sprint planning, refinement, development, daily SCRUMs, retrospectives, backlog grooming. Act as a bridge between cloud team and other teams for cross-team collaboration.
 
-- Cloud Server - Quirklogic AWS cloud service. Writing core REST APIs for distributed file system, access control, data share, sync & collaborate, user account security and customer provisioning. Create and publish private NPM modules and middlewares of crypto authentication and keyGen services, etc.
+> - Cloud Server - Quirklogic AWS cloud service. Writing core REST APIs for distributed file system, access control, data share, sync & collaborate, user account security and customer provisioning. Create and publish private NPM modules and middlewares of crypto authentication and keyGen services, etc.
 
-- Web Portal - Quirklogic React Web application offering UI for customer provision, user and file management service.
+> - Web Portal - Quirklogic React Web application offering UI for customer provision, user and file management service.
 
-- Proxy Server - Node server that acts as an intermediary for requests from web portal seeking resources and services from AWS cloud service. Core modules include key-exchange authentication and memcached layer (distributed memory caching).
+> - Proxy Server - Node server that acts as an intermediary for requests from web portal seeking resources and services from AWS cloud service. Core modules include key-exchange authentication and memcached layer (distributed memory caching).
 
-Stack: REST, Node.js & Express.js, JSON, Redis, NoSQL, Couchbase Server & Sync Gateway, N1ql & GSI, JIRA, crypto, Scrum Agile, JIRA, React, Redux, JSX, Git
+> Stack: REST, Node.js & Express.js, JSON, Redis, NoSQL, Couchbase Server & Sync Gateway, N1ql & GSI, JIRA, crypto, Scrum Agile, JIRA, React, Redux, JSX, Git
+</span>
 
 
-> **Software Consultant** (April 2016 – Present) \- [Northstar Drillstem Testers](Northstar Drillstem Testers)
+**Software Consultant** (April 2016 – Present) \- [Northstar Drillstem Testers](Northstar Drillstem Testers)
 
 Part-time consultant for the architecture and development of [Northstar web services](http://nsoper.northstardst.com/portal).
 
