@@ -4,11 +4,6 @@ title:
 ---
 
 
-<center>
----
-# LONGSHENG ZHOU | 周龙生
----
-</center>
 
 
 RESEARCH INTEREST
@@ -22,15 +17,15 @@ EMPLOYMENT EXPERIENCE
 **Software Developer** (April 2016 – Present) \- [QuirkLogic Inc](https://www.quirklogic.com/)
 
 > Involving in Quirklogic agile R&D engineering team building cloud and web services for real-time ideation e-ink solution "[Quilla](https://www.youtube.com/watch?v=o4V4AA99jjU&t=3s)" and its ecosystem.
-> &nbsp;
+>
 > Rotating scrum master leading sprint planning, refinement, development, daily SCRUMs, retrospectives, backlog grooming. Act as a bridge between cloud team and other teams for cross-team collaboration.
->&nbsp;
+>
 > - Cloud Server - Quirklogic AWS cloud service. Writing core REST APIs for distributed file system, access control, data share, sync & collaborate, user account security and customer provisioning. Create and publish private NPM modules and middlewares of crypto authentication and keyGen services, etc.
->&nbsp;
+>
 > - Web Portal - Quirklogic React Web application offering UI for customer provision, user and file management service.
->&nbsp;
+>
 > - Proxy Server - Node server that acts as an intermediary for requests from web portal seeking resources and services from AWS cloud service. Core modules include key-exchange authentication and memcached layer (distributed memory caching).
->&nbsp;
+>
 > Stack: REST, Node.js & Express.js, JSON, Redis, NoSQL, Couchbase Server & Sync Gateway, N1ql & GSI, JIRA, crypto, Scrum Agile, JIRA, React, Redux, JSX, Git
 
 
